@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Citas</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+   
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+    <div class="contenedor" data-aos="fade-up">
+        <h1>Sistema de Reserva de Citas</h1>
+
+        <form id="formCita">
+            <label for="nombre">Nombre del cliente</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+            <label for="fecha">Fecha de cita</label>
+            <input type="text" id="fecha" placeholder="Seleccione una fecha">
+
+            <label for="hora">Hora</label>
+            <select id="hora">
+                <option value="">Seleccione una hora</option>
+            </select>
+
+            <label for="servicio">Tipo de servicio</label>
+            <select id="servicio">
+                <option value="">Seleccione un servicio</option>
+                <option value="Medicina General">Medicina General</option>
+                <option value="Pediatría">Pediatría</option>
+                <option value="Odontología">Odontología</option>
+            </select>
+
+            <button type="submit">Guardar cita</button>
+        </form>
+    </div>
+
+    <div class="contenedor" data-aos="fade-up">
+        <h2>Horarios disponibles</h2>
+        <div id="disponibilidad"></div>
+    </div>
+
+    <div class="contenedor" data-aos="fade-up">
+        <h2>Citas registradas</h2>
+        <div id="listaCitas"></div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   
+    <script src="/AH2A/js/script.js"></script>
+</body>
+</html>
